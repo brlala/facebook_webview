@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 
 const Login = () => {
   return (
-    <Fragment className='login'>
+    <Fragment>
       Login page
     </Fragment>
   )
