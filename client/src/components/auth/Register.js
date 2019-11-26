@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Fragment } from 'react'
 
 const Register = () => {
-  return(
-    <div className='register'>
+  return (
+    <Fragment className='register'>
       Register page
-    </div>
+    </Fragment>
   )
 }
 

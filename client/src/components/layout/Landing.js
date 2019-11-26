@@ -1,11 +1,10 @@
-// Placeholder
-import React from 'react';
+import React, { Fragment } from 'react'
 
 const Landing = () => {
-  return(
-    <div className='landing'>
+  return (
+    <Fragment className='landing'>
       Landing page
-    </div>
+    </Fragment>
   )
 }
 

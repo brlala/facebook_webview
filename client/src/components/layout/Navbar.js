@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Fragment } from 'react'
 
 const Navbar = () => {
-  return(
-    <div className='navbar'>
+  return (
+    <Fragment className='navbar'>
       Navbar page
-    </div>
+    </Fragment>
   )
 }
 
