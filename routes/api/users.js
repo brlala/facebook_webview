@@ -1,6 +1,7 @@
 const express = require('express')
 const { getDB } = require('../../config/db')
 const { check, validationResult } = require('express-validator/check')
+const jwt = require('jsonwebtoken')
 const router = express.Router()
 
 // @route POST api/users
@@ -20,11 +21,27 @@ router.post('/', [
 
     const { name, email, password } = req.body
     try {
-      let user = await getDB().collection('bot_user').findOne({first_name: name, "facebook.id": password})
-      if(!user){
-        res.status(400).json({errors:[{msg: 'User does not exist'}]})
+      let user = await getDB().
+        collection('bot_user').
+        findOne({ first_name: name, 'facebook.id': password })
+      if (!user) {
+        return res.status(400).
+          json({ errors: [{ msg: 'Invalid Credentials' }] })
       }
-      res.send(user)
+      const payload = {
+        user: {
+          id: user._id,
+        },
+      }
+
+      jwt.sign(
+        payload,
+        process.env.jwtSecret,
+        { expiresIn: 3600000 },
+        (err, token) => {
+          if (err) throw err
+          res.json({ token })
+        })
     } catch (e) {
       console.error(e.message)
       res.status(500).send('Server error')

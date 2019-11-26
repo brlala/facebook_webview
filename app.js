@@ -11,6 +11,7 @@ const usersRouter = require('./routes/users')
 const underwritingAPI = require('./routes/api/underwriting')
 const botAPI = require('./routes/api/bot')
 const userAPI = require('./routes/api/users')
+const authAPI = require('./routes/api/auth')
 
 // ===== MODULES ===============================================================
 const { connectDB } = require('./config/db')
@@ -49,6 +50,7 @@ app.use('/users', usersRouter);
 app.use('/api/underwriting', underwritingAPI)
 app.use('/api/bot', botAPI)
 app.use('/api/users', userAPI)
+app.use('/api/auth', authAPI)
 
 /* ----------  Errors  ---------- */
 // catch 404 and forward to error handler

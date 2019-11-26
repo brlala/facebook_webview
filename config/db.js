@@ -2,6 +2,7 @@ const MongoClient = require('mongodb').MongoClient
 const mongoURI = process.env.mongoURI
 const abbreviation = process.env.ABBREVIATION
 const assert = require('assert')
+const ObjectID = require('mongodb').ObjectID
 let _db
 
 const connectDB = async () => {
@@ -36,4 +37,5 @@ function getDB () {
 module.exports = {
   connectDB,
   getDB,
+  ObjectID
 }
