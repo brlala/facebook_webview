@@ -7,10 +7,10 @@ const router = express.Router()
 // @access Public
 router.get('/', async function(req, res, next) {
   try{
-    const doc = await getDB().collection('bot').findOne({abbreviation: "gelmuat"})
+    const doc = await getDB().collection('bot').findOne({abbreviation: process.env.ABBREVIATION})
     res.send(doc)
   } catch (e) {
-    
+    res.send('No entries found')
   }
 });
 
