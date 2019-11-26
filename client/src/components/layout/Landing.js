@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 
 const Landing = () => {
   return (
-    <Fragment className='landing'>
+    <Fragment>
       Landing page
     </Fragment>
   )

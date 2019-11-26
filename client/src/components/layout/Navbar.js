@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 
 const Navbar = () => {
   return (
-    <Fragment className='navbar'>
+    <Fragment>
       Navbar page
     </Fragment>
   )
