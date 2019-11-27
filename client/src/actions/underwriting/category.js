@@ -1,18 +1,18 @@
 import axios from 'axios'
 
-import {GET_PROFILE, PROFILE_ERROR} from "./types";
+import {GET_CATEGORY, CATEGORY_ERROR} from "../types";
 
 // Get current users profile
-export const getCurrentProfile = () => async dispatch => {
+export const getCategories = () => async dispatch => {
     try {
-        const res = await axios.get('/api/profile/me')
+        const res = await axios.get('/api/underwriting')
         dispatch({
-            type: GET_PROFILE,
+            type: GET_CATEGORY,
             payload: res.data
         })
     } catch (e) {
         dispatch({
-            type: PROFILE_ERROR,
+            type: CATEGORY_ERROR,
             payload: {msg: e.response.statusText, status: e.response.status}
         })
     }

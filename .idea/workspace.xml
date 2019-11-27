@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="364e187b-fcb0-488d-a1dd-bb396981992d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/underwriting/Category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/underwriting/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/underwriting/Underwriting.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/underwriting/Underwriting.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/reducers/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/underwriting/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/underwriting.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/underwriting.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +57,13 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/actions/underwriting" />
+      <recent name="$PROJECT_DIR$/client/src/reducers/underwriting" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client/src/components" />
       <recent name="$PROJECT_DIR$/routes/api" />
@@ -356,11 +368,11 @@
     <state x="880" y="142" key="Vcs.Push.Dialog.v2/0.23.1680.967@0.23.1680.967" timestamp="1574793067881" />
     <state x="880" y="143" key="Vcs.Push.Dialog.v2/0.23.1680.972@0.23.1680.972" timestamp="1574863268810" />
     <state x="1006" y="146" key="Vcs.Push.Dialog.v2/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1574847934853" />
-    <state x="953" y="285" width="639" height="476" key="find.popup" timestamp="1574849144556">
-      <screen x="0" y="23" width="1920" height="993" />
+    <state x="834" y="279" width="683" height="476" key="find.popup" timestamp="1574869516772">
+      <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state x="834" y="278" width="683" height="476" key="find.popup/0.23.1680.967@0.23.1680.967" timestamp="1574790444784" />
-    <state x="834" y="279" width="670" height="476" key="find.popup/0.23.1680.972@0.23.1680.972" timestamp="1574780782340" />
+    <state x="834" y="279" width="683" height="476" key="find.popup/0.23.1680.972@0.23.1680.972" timestamp="1574869516772" />
     <state x="953" y="285" width="639" height="476" key="find.popup/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1574849144556" />
     <state x="938" y="235" width="766" height="709" key="search.everywhere.popup" timestamp="1574866215590">
       <screen x="0" y="0" width="1920" height="1040" />

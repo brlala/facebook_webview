@@ -1,13 +1,13 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import {getCurrentProfile} from "../../actions/profile";
+import { getCategories } from '../../actions/underwriting/category'
 
-const Underwriting = ({getCurrentProfile, auth, profile}) =>{
-  useEffect(()=>{
-    getCurrentProfile()
+const Underwriting = ({ getCategories, categories }) => {
+  useEffect(() => {
+    getCategories()
   }, [])
-  return(
+  return (
     <div>
       Underwriting Category
     </div>
@@ -17,13 +17,12 @@ const Underwriting = ({getCurrentProfile, auth, profile}) =>{
 Underwriting.propTypes = {
   getCurrentProfile: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
-  profile: PropTypes.object.isRequired
+  profile: PropTypes.object.isRequired,
 }
-
 
 const mapStateToProps = state => ({
   auth: state.auth,
-  profile: state.profile
+  profile: state.profile,
 })
 
-export default connect(mapStateToProps, { getCurrentProfile }) (Underwriting)
+export default connect(mapStateToProps, { getCategories })(Underwriting)
