@@ -1,6 +1,6 @@
 const express = require('express')
 const { getDB } = require('../../config/db')
-const { check, validationResult } = require('express-validator/check')
+const { check, validationResult } = require('express-validator')
 const jwt = require('jsonwebtoken')
 const router = express.Router()
 

@@ -12,10 +12,10 @@ export const register = ({ name, email, password }) => async dispatch => {
       'Content-Type': 'application/json',
     },
   }
-
   const body = JSON.stringify({ name, email, password })
 
   try {
+    console.log(body)
     const res = await axios.post('/api/users', body, config)
 
     dispatch({
@@ -24,9 +24,9 @@ export const register = ({ name, email, password }) => async dispatch => {
     })
   } catch (e) {
     const errors = e.response.data.errors
-
+    console.log(errors)
     if (errors) {
-      errors.forEach(error => dispatch(setAlert(error.msg), 'danger'))
+      errors.forEach(error => dispatch(setAlert(error.msg, 'danger')))
     }
   }
   dispatch({
