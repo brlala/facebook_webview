@@ -6,6 +6,8 @@ import Landing from './components/layout/Landing'
 import Register from './components/auth/Register'
 import Login from './components/auth/Login'
 import Alert from './components/layout/Alert'
+import Underwriting from './components/underwriting/Underwriting'
+import PrivateRoute from './components/routing/PrivateRoute'
 
 // Redux
 import { loadUser } from './actions/auth'
@@ -33,6 +35,7 @@ const App = () => {
             <Switch>
               <Route exact path="/register" component={Register}/>
               <Route exact path="/login" component={Login}/>
+              <PrivateRoute exact path="/underwriting" component={Underwriting}/>
             </Switch>
           </section>
         </Fragment>
