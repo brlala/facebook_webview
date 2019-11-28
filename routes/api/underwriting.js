@@ -11,7 +11,8 @@ router.get('/', auth, async function (req, res, next) {
     const doc = await getDB().collection('panel_hospitals').distinct('State')
     res.send(doc)
   } catch (e) {
-    res.send('No categories found')
+    return res.status(400).
+      json({ errors: [{ msg: 'No categories found.' }] })
   }
 })
 

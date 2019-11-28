@@ -1,7 +1,7 @@
 import {GET_CATEGORY, CATEGORY_ERROR} from "../../actions/types";
 
 const initialState = {
-    categories: [],
+    categories: null,
     loading: true,
     error: {}
 }
@@ -18,7 +18,7 @@ export default function (state = initialState, action) {
         case CATEGORY_ERROR:
             return {
                 ...state,
-                categories: payload,
+                error: payload,
                 loading: false
             }
         default:

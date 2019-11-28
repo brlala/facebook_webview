@@ -8,10 +8,12 @@ const auth = require('../../middleware/auth')
 // @access Private
 router.get('/', auth, async function(req, res, next) {
   try{
-    const doc = await getDB().collection('bot').findOne({abbreviation: process.env.ABBREVIATION})
+    const abbreviation = process.env.ABBREVIATION
+    const doc = await getDB().collection('bot').findOne({abbreviation: abbreviation})
     res.send(doc)
   } catch (e) {
-    res.send('No entries found')
+    return res.status(400).
+      json({ errors: [{ msg: `There is no bot entry for ${abbreviation}` }] })
   }
 });
 
