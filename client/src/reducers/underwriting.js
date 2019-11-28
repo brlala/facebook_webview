@@ -1,9 +1,14 @@
-import {GET_CATEGORY, CATEGORY_ERROR} from "../../actions/types";
+import {
+    GET_CATEGORY,
+    CATEGORY_ERROR,
+    GET_SUBCATEGORY, SUBCATEGORY_ERROR,
+} from '../actions/types'
 
 const initialState = {
     categories: null,
     loading: true,
-    error: {}
+    error: {},
+    sendToGateway: false
 }
 
 export default function (state = initialState, action) {
@@ -20,6 +25,19 @@ export default function (state = initialState, action) {
                 ...state,
                 error: payload,
                 loading: false
+            }
+        case GET_SUBCATEGORY:
+            return {
+                ...state,
+                categories: payload,
+                loading: false,
+                sendToGateway: true
+            }
+        case SUBCATEGORY_ERROR:
+            return {
+                ...state,
+                error: payload,
+                loading: false,
             }
         default:
             return state

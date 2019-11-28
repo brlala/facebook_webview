@@ -16,19 +16,4 @@ router.get('/', auth, async function (req, res, next) {
   }
 })
 
-// @route GET api/underwriting/:subcategory
-// @desc getting underwriting subcategory
-// @access Private
-router.get('/:subcategory', auth,
-  async function ({ params: { subcategory } }, res, next) {
-    try {
-      console.log(`GET Subcategory response: ${subcategory}`)
-      const doc = await getDB().collection('panel_hospitals').distinct('Area', {"State" : subcategory})
-      res.send(doc)
-    } catch (e) {
-      return res.status(400).
-        json({ errors: [{ msg: 'No subcategories found.' }] })
-    }
-  })
-
 module.exports = router

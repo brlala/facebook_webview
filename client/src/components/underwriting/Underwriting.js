@@ -5,7 +5,7 @@ import { getCategories } from '../../actions/underwriting/category'
 import Spinner from '../layout/Spinner'
 import Category from './Category'
 
-const Underwriting = ({ getCategories, auth, category: { categories, loading } }) => {
+const Underwriting = ({ getCategories, auth, underwriting: { categories, loading } }) => {
   useEffect(() => {
     getCategories()
   }, [])
@@ -15,12 +15,12 @@ const Underwriting = ({ getCategories, auth, category: { categories, loading } }
 Underwriting.propTypes = {
   getCategories: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
-  category: PropTypes.object.isRequired,
+  underwriting: PropTypes.object.isRequired,
 }
 
 const mapStateToProps = state => ({
   auth: state.auth,
-  category: state.category,
+  underwriting: state.underwriting,
 })
 
 export default connect(mapStateToProps, { getCategories })(Underwriting)
