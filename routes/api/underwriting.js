@@ -8,11 +8,14 @@ const router = express.Router()
 // @access Private
 router.get('/', auth, async function (req, res, next) {
   try {
-    const doc = await getDB().collection('panel_hospitals').distinct('State')
-    res.send(doc)
+    const doc = await getDB().collection('taxonomy_underwriting').distinct("System")
+    if(!doc){
+      return res.status(400).send('No categories found.')
+    }
+    res.send(doc.sort())
   } catch (e) {
-    return res.status(400).
-      json({ errors: [{ msg: 'No categories found.' }] })
+    return res.status(500).
+      json({ errors: [{ msg: 'Server error' }] })
   }
 })
 
@@ -23,11 +26,14 @@ router.get('/:subcategory', auth,
   async function ({ params: { subcategory } }, res, next) {
     try {
       console.log(`GET Subcategory response: ${subcategory}`)
-      const doc = await getDB().collection('panel_hospitals').distinct('Area', {"State" : subcategory})
-      res.send(doc)
+      const doc = await getDB().collection('taxonomy_underwriting').distinct('Medical Conditions', {"System" : subcategory})
+      if(!doc){
+        return res.status(400).send('No subcategory found.')
+      }
+      res.send(doc.sort())
     } catch (e) {
-      return res.status(400).
-        json({ errors: [{ msg: 'No subcategories found.' }] })
+      return res.status(500).
+        json({ errors: [{ msg: 'Server error' }] })
     }
   })
 
