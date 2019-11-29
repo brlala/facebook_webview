@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="364e187b-fcb0-488d-a1dd-bb396981992d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/underwriting/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/underwriting/Category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/underwriting.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/underwriting.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +99,7 @@
       <workItem from="1574782962072" duration="11107000" />
       <workItem from="1574834158038" duration="15420000" />
       <workItem from="1574905988829" duration="22807000" />
-      <workItem from="1574935795477" duration="2909000" />
+      <workItem from="1574935795477" duration="3527000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1574737820818</created>
@@ -287,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574932786058</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="adding messenger extension script">
+      <created>1574991020638</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1574991020639</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +333,8 @@
     <MESSAGE value="completed up to retrieving category" />
     <MESSAGE value="finished loading category, moving to implementing sub category and button click" />
     <MESSAGE value="completed all features to posting to gateway" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed all features to posting to gateway" />
+    <MESSAGE value="adding messenger extension script" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding messenger extension script" />
   </component>
   <component name="WindowStateProjectService">
     <state x="820" y="207" key="#Plugins" timestamp="1574836118128">
@@ -353,12 +357,16 @@
       <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state x="951" y="390" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1680.972@0.23.1680.972" timestamp="1574866125189" />
-    <state x="734" y="148" key="CommitChangelistDialog2" timestamp="1574932785875">
+    <state x="734" y="148" key="CommitChangelistDialog2" timestamp="1574991020399">
       <screen x="0" y="23" width="1920" height="993" />
     </state>
     <state x="642" y="144" key="CommitChangelistDialog2/0.23.1680.967@0.23.1680.967" timestamp="1574793065039" />
     <state x="642" y="145" key="CommitChangelistDialog2/0.23.1680.972@0.23.1680.972" timestamp="1574870053604" />
-    <state x="734" y="148" key="CommitChangelistDialog2/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1574932785875" />
+    <state x="734" y="148" key="CommitChangelistDialog2/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1574991020399" />
+    <state x="355" y="138" key="DiffContextDialog" timestamp="1574990996915">
+      <screen x="0" y="23" width="1920" height="993" />
+    </state>
+    <state x="355" y="138" key="DiffContextDialog/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1574990996915" />
     <state x="892" y="57" key="FileDocumentManager.FileCacheConflict" timestamp="1574749732640">
       <screen x="0" y="23" width="1920" height="993" />
     </state>
@@ -383,26 +391,31 @@
     </state>
     <state width="1167" height="258" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1574781692046" />
     <state width="547" height="253" key="GridCell.Tab.0.right/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1574843666766" />
+    <state x="891" y="263" key="RollbackChangesDialog" timestamp="1574991002152">
+      <screen x="0" y="23" width="1920" height="993" />
+    </state>
+    <state x="891" y="263" key="RollbackChangesDialog/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1574991002152" />
     <state x="683" y="159" key="SettingsEditor" timestamp="1574866099704">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state x="683" y="159" key="SettingsEditor/0.23.1680.972@0.23.1680.972" timestamp="1574866099704" />
     <state x="782" y="162" key="SettingsEditor/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1574752421395" />
-    <state x="1006" y="146" key="Vcs.Push.Dialog.v2" timestamp="1574932787750">
+    <state x="1006" y="146" key="Vcs.Push.Dialog.v2" timestamp="1574991026591">
       <screen x="0" y="23" width="1920" height="993" />
     </state>
     <state x="880" y="142" key="Vcs.Push.Dialog.v2/0.23.1680.967@0.23.1680.967" timestamp="1574793067881" />
     <state x="880" y="143" key="Vcs.Push.Dialog.v2/0.23.1680.972@0.23.1680.972" timestamp="1574870914999" />
-    <state x="1006" y="146" key="Vcs.Push.Dialog.v2/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1574932787750" />
+    <state x="1006" y="146" key="Vcs.Push.Dialog.v2/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1574991026591" />
     <state x="100" y="123" width="1720" height="793" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1574929942323">
       <screen x="0" y="23" width="1920" height="993" />
     </state>
     <state x="0" y="93" width="1680" height="793" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1680.966@0.23.1680.966" timestamp="1574928566585" />
     <state x="100" y="123" width="1720" height="793" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1574929942323" />
-    <state x="834" y="278" width="683" height="476" key="find.popup" timestamp="1574937884067">
-      <screen x="0" y="23" width="1680" height="965" />
+    <state x="834" y="278" width="683" height="477" key="find.popup" timestamp="1574991621960">
+      <screen x="0" y="23" width="1680" height="966" />
     </state>
     <state x="834" y="278" width="683" height="476" key="find.popup/0.23.1680.965@0.23.1680.965" timestamp="1574937884067" />
+    <state x="834" y="278" width="683" height="477" key="find.popup/0.23.1680.966@0.23.1680.966" timestamp="1574991621960" />
     <state x="834" y="278" width="683" height="476" key="find.popup/0.23.1680.967@0.23.1680.967" timestamp="1574790444784" />
     <state x="834" y="279" width="683" height="476" key="find.popup/0.23.1680.972@0.23.1680.972" timestamp="1574878000179" />
     <state x="953" y="285" width="639" height="476" key="find.popup/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1574936205612" />

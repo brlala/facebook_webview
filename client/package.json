@@ -41,5 +41,5 @@
   "devDependencies": {
     "@types/react": "^16.9.13"
   },
-  "proxy": "http://localhost:4000"
+  "proxy": "http://localhost:4001"
 }
