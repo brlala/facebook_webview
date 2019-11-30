@@ -17,6 +17,7 @@
 <!--  Messenger Script-->
 <script>
   window.extAsyncInit = function () {
+    alert('%REACT_APP_APP_ID%')
     MessengerExtensions.getContext('%REACT_APP_APP_ID%',
       function success (thread_context) {
         const signed_request = thread_context.signed_request
