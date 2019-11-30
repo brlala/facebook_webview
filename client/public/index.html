@@ -20,20 +20,11 @@
 <!--  Messenger Script-->
 <script src="../src/index.js"></script>
 <script>
-  (function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0]
-    if (d.getElementById(id)) {return}
-    js = d.createElement(s)
-    js.id = id
-    js.src = '//connect.facebook.net/en_US/messenger.Extensions.js'
-    fjs.parentNode.insertBefore(js, fjs)
-  }(document, 'script', 'Messenger'))
   window.extAsyncInit = function () {
-    MessengerExtensions.getContext(
-      '%REACT_APP_APP_ID%',
-      context => {
-        const signed_request = context.signed_request
-        const psid = context.psid // THIS PSID IS NOW MISSING!
+    MessengerExtensions.getContext('%REACT_APP_APP_ID%',
+      function success(thread_context){
+        const signed_request = thread_context.signed_request
+        const psid = thread_context.psid // THIS PSID IS NOW MISSING!
 
         console.log(
           '***** Messenger Extensions Loaded! \n',
@@ -48,9 +39,24 @@
           MessengerExtensions.requestCloseBrowser(
             () => {},
             () => {document.body.innerHTML = 'Error closing window. Please close the window manually.'})
-        }
-      })
-  }
+      }},
+      function error(err){
+        alert("error"+err)
+        MessengerExtensions.requestCloseBrowser(
+          () => {},
+          () => {document.body.innerHTML = 'Error closing window. Please close the window manually.'})
+      }
+    );
+  };
+
+  (function(doc, script, domId){
+    var js, fjs = doc.getElementsByTagName(script)[0];
+    if (doc.getElementById(domId)) { return; }
+    js = doc.createElement(script);
+    js.id = domId;
+    js.src = "//connect.facebook.com/en_US/messenger.Extensions.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'Messenger'));
 </script>
 <noscript>You need to enable JavaScript to run this app.</noscript>
 <div id="root" data-param="https://website.biz/api/"></div>

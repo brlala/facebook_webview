@@ -5,8 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/auth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +102,7 @@
       <workItem from="1574834158038" duration="15420000" />
       <workItem from="1574905988829" duration="22807000" />
       <workItem from="1574935795477" duration="26680000" />
-      <workItem from="1575112364654" duration="4404000" />
+      <workItem from="1575112364654" duration="6762000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1574737820818</created>
@@ -323,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575108983862</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="added verification for facebook request">
+      <created>1575130650896</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1575130650896</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,7 +348,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added api sample and formatting" />
     <MESSAGE value="added react app" />
     <MESSAGE value="cleaning up the repo and linking components" />
     <MESSAGE value="added multiple pages sample" />
@@ -368,7 +372,8 @@
     <MESSAGE value="change port to 4001" />
     <MESSAGE value="debugging front end" />
     <MESSAGE value="added facebook whitelist api, oops page and also moving to production build" />
-    <option name="LAST_COMMIT_MESSAGE" value="added facebook whitelist api, oops page and also moving to production build" />
+    <MESSAGE value="added verification for facebook request" />
+    <option name="LAST_COMMIT_MESSAGE" value="added verification for facebook request" />
   </component>
   <component name="WindowStateProjectService">
     <state x="820" y="207" key="#Plugins" timestamp="1574836118128">
@@ -391,11 +396,11 @@
       <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state x="951" y="390" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1680.972@0.23.1680.972" timestamp="1574866125189" />
-    <state x="488" y="144" key="CommitChangelistDialog2" timestamp="1575108983650">
-      <screen x="0" y="23" width="1680" height="965" />
+    <state x="642" y="145" key="CommitChangelistDialog2" timestamp="1575130650467">
+      <screen x="0" y="23" width="1680" height="966" />
     </state>
     <state x="488" y="144" key="CommitChangelistDialog2/0.23.1680.965@0.23.1680.965" timestamp="1575108983650" />
-    <state x="642" y="145" key="CommitChangelistDialog2/0.23.1680.966@0.23.1680.966" timestamp="1574994974785" />
+    <state x="642" y="145" key="CommitChangelistDialog2/0.23.1680.966@0.23.1680.966" timestamp="1575130650467" />
     <state x="488" y="144" key="CommitChangelistDialog2/0.23.1680.967@0.23.1680.967" timestamp="1575104612417" />
     <state x="642" y="145" key="CommitChangelistDialog2/0.23.1680.972@0.23.1680.972" timestamp="1574870053604" />
     <state x="734" y="148" key="CommitChangelistDialog2/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1574991020399" />
@@ -438,11 +443,11 @@
     <state x="683" y="158" key="SettingsEditor/0.23.1680.967@0.23.1680.967" timestamp="1575019288901" />
     <state x="683" y="159" key="SettingsEditor/0.23.1680.972@0.23.1680.972" timestamp="1574866099704" />
     <state x="782" y="162" key="SettingsEditor/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1575002581476" />
-    <state x="880" y="143" key="Vcs.Push.Dialog.v2" timestamp="1575108985920">
-      <screen x="0" y="23" width="1680" height="965" />
+    <state x="880" y="143" key="Vcs.Push.Dialog.v2" timestamp="1575130653861">
+      <screen x="0" y="23" width="1680" height="966" />
     </state>
     <state x="880" y="143" key="Vcs.Push.Dialog.v2/0.23.1680.965@0.23.1680.965" timestamp="1575108985920" />
-    <state x="880" y="143" key="Vcs.Push.Dialog.v2/0.23.1680.966@0.23.1680.966" timestamp="1574994977168" />
+    <state x="880" y="143" key="Vcs.Push.Dialog.v2/0.23.1680.966@0.23.1680.966" timestamp="1575130653861" />
     <state x="880" y="142" key="Vcs.Push.Dialog.v2/0.23.1680.967@0.23.1680.967" timestamp="1574793067881" />
     <state x="880" y="143" key="Vcs.Push.Dialog.v2/0.23.1680.972@0.23.1680.972" timestamp="1574870914999" />
     <state x="1006" y="146" key="Vcs.Push.Dialog.v2/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1574991026591" />
@@ -451,11 +456,11 @@
     </state>
     <state x="0" y="93" width="1680" height="793" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1680.966@0.23.1680.966" timestamp="1574928566585" />
     <state x="100" y="123" width="1720" height="793" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1574929942323" />
-    <state x="834" y="278" width="683" height="476" key="find.popup" timestamp="1575107727468">
-      <screen x="0" y="23" width="1680" height="965" />
+    <state x="834" y="278" width="683" height="477" key="find.popup" timestamp="1575131647424">
+      <screen x="0" y="23" width="1680" height="966" />
     </state>
     <state x="834" y="278" width="683" height="476" key="find.popup/0.23.1680.965@0.23.1680.965" timestamp="1575107727468" />
-    <state x="834" y="278" width="683" height="477" key="find.popup/0.23.1680.966@0.23.1680.966" timestamp="1574998663208" />
+    <state x="834" y="278" width="683" height="477" key="find.popup/0.23.1680.966@0.23.1680.966" timestamp="1575131647424" />
     <state x="834" y="278" width="683" height="476" key="find.popup/0.23.1680.967@0.23.1680.967" timestamp="1575107426936" />
     <state x="834" y="279" width="683" height="476" key="find.popup/0.23.1680.972@0.23.1680.972" timestamp="1574878000179" />
     <state x="953" y="285" width="639" height="476" key="find.popup/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1575023824655" />
