@@ -22,7 +22,6 @@ if (localStorage.token) {
 }
 
 const App = () => {
-  console.log(window.psid)
   useEffect(() => {
     store.dispatch(loadUser());
   }, [])
