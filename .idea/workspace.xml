@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="364e187b-fcb0-488d-a1dd-bb396981992d" name="Default Changelist" comment="">
+    <list default="true" id="364e187b-fcb0-488d-a1dd-bb396981992d" name="Default Changelist" comment="debugging front end">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Messenger.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/messenger_api_helper/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/messenger_api_helper/thread-setup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/img/DELETEME" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/Oops.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +49,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="13.2.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/routes/api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -49,23 +62,23 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/routes/api" />
-      <recent name="$PROJECT_DIR$/routes" />
-      <recent name="$PROJECT_DIR$/client/src/components/common" />
-      <recent name="$PROJECT_DIR$/client/src/components" />
-      <recent name="$PROJECT_DIR$/client/src/img" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client" />
       <recent name="$PROJECT_DIR$/routes" />
       <recent name="$PROJECT_DIR$/client/src/reducers" />
       <recent name="$PROJECT_DIR$/client/src/components/layout" />
       <recent name="$PROJECT_DIR$/client/src/actions/underwriting" />
-      <recent name="$PROJECT_DIR$/client/src/reducers/underwriting" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/routes/api" />
+      <recent name="$PROJECT_DIR$/routes" />
+      <recent name="$PROJECT_DIR$/client/src/components/common" />
+      <recent name="$PROJECT_DIR$/client/src/components" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -99,7 +112,7 @@
       <workItem from="1574782962072" duration="11107000" />
       <workItem from="1574834158038" duration="15420000" />
       <workItem from="1574905988829" duration="22807000" />
-      <workItem from="1574935795477" duration="6049000" />
+      <workItem from="1574935795477" duration="23876000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1574737820818</created>
@@ -304,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574991666740</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="debugging front end">
+      <created>1574994974911</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1574994974911</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,7 +344,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial commit" />
     <MESSAGE value="connected database" />
     <MESSAGE value="added api sample and formatting" />
     <MESSAGE value="added react app" />
@@ -349,7 +368,8 @@
     <MESSAGE value="completed all features to posting to gateway" />
     <MESSAGE value="adding messenger extension script" />
     <MESSAGE value="change port to 4001" />
-    <option name="LAST_COMMIT_MESSAGE" value="change port to 4001" />
+    <MESSAGE value="debugging front end" />
+    <option name="LAST_COMMIT_MESSAGE" value="debugging front end" />
   </component>
   <component name="WindowStateProjectService">
     <state x="820" y="207" key="#Plugins" timestamp="1574836118128">
@@ -372,11 +392,11 @@
       <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state x="951" y="390" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1680.972@0.23.1680.972" timestamp="1574866125189" />
-    <state x="642" y="145" key="CommitChangelistDialog2" timestamp="1574991666626">
-      <screen x="0" y="23" width="1680" height="966" />
+    <state x="488" y="144" key="CommitChangelistDialog2" timestamp="1575104612417">
+      <screen x="0" y="23" width="1680" height="967" />
     </state>
-    <state x="642" y="145" key="CommitChangelistDialog2/0.23.1680.966@0.23.1680.966" timestamp="1574991666626" />
-    <state x="642" y="144" key="CommitChangelistDialog2/0.23.1680.967@0.23.1680.967" timestamp="1574793065039" />
+    <state x="642" y="145" key="CommitChangelistDialog2/0.23.1680.966@0.23.1680.966" timestamp="1574994974785" />
+    <state x="488" y="144" key="CommitChangelistDialog2/0.23.1680.967@0.23.1680.967" timestamp="1575104612417" />
     <state x="642" y="145" key="CommitChangelistDialog2/0.23.1680.972@0.23.1680.972" timestamp="1574870053604" />
     <state x="734" y="148" key="CommitChangelistDialog2/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1574991020399" />
     <state x="355" y="138" key="DiffContextDialog" timestamp="1574990996915">
@@ -407,19 +427,21 @@
     </state>
     <state width="1167" height="258" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1574781692046" />
     <state width="547" height="253" key="GridCell.Tab.0.right/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1574843666766" />
-    <state x="891" y="263" key="RollbackChangesDialog" timestamp="1574991002152">
-      <screen x="0" y="23" width="1920" height="993" />
+    <state x="780" y="257" key="RollbackChangesDialog" timestamp="1575106227865">
+      <screen x="0" y="23" width="1680" height="967" />
     </state>
-    <state x="891" y="263" key="RollbackChangesDialog/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1574991002152" />
-    <state x="683" y="159" key="SettingsEditor" timestamp="1574866099704">
-      <screen x="0" y="23" width="1680" height="972" />
+    <state x="780" y="257" key="RollbackChangesDialog/0.23.1680.967@0.23.1680.967" timestamp="1575106227865" />
+    <state x="891" y="263" key="RollbackChangesDialog/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1575002394108" />
+    <state x="683" y="158" key="SettingsEditor" timestamp="1575019288901">
+      <screen x="0" y="23" width="1680" height="967" />
     </state>
+    <state x="683" y="158" key="SettingsEditor/0.23.1680.967@0.23.1680.967" timestamp="1575019288901" />
     <state x="683" y="159" key="SettingsEditor/0.23.1680.972@0.23.1680.972" timestamp="1574866099704" />
-    <state x="782" y="162" key="SettingsEditor/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1574752421395" />
-    <state x="880" y="143" key="Vcs.Push.Dialog.v2" timestamp="1574991668579">
+    <state x="782" y="162" key="SettingsEditor/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1575002581476" />
+    <state x="880" y="143" key="Vcs.Push.Dialog.v2" timestamp="1574994977168">
       <screen x="0" y="23" width="1680" height="966" />
     </state>
-    <state x="880" y="143" key="Vcs.Push.Dialog.v2/0.23.1680.966@0.23.1680.966" timestamp="1574991668579" />
+    <state x="880" y="143" key="Vcs.Push.Dialog.v2/0.23.1680.966@0.23.1680.966" timestamp="1574994977168" />
     <state x="880" y="142" key="Vcs.Push.Dialog.v2/0.23.1680.967@0.23.1680.967" timestamp="1574793067881" />
     <state x="880" y="143" key="Vcs.Push.Dialog.v2/0.23.1680.972@0.23.1680.972" timestamp="1574870914999" />
     <state x="1006" y="146" key="Vcs.Push.Dialog.v2/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1574991026591" />
@@ -428,19 +450,20 @@
     </state>
     <state x="0" y="93" width="1680" height="793" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1680.966@0.23.1680.966" timestamp="1574928566585" />
     <state x="100" y="123" width="1720" height="793" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1574929942323" />
-    <state x="834" y="278" width="683" height="477" key="find.popup" timestamp="1574994115084">
-      <screen x="0" y="23" width="1680" height="966" />
+    <state x="834" y="278" width="683" height="476" key="find.popup" timestamp="1575107727468">
+      <screen x="0" y="23" width="1680" height="965" />
     </state>
-    <state x="834" y="278" width="683" height="476" key="find.popup/0.23.1680.965@0.23.1680.965" timestamp="1574937884067" />
-    <state x="834" y="278" width="683" height="477" key="find.popup/0.23.1680.966@0.23.1680.966" timestamp="1574994115084" />
-    <state x="834" y="278" width="683" height="476" key="find.popup/0.23.1680.967@0.23.1680.967" timestamp="1574790444784" />
+    <state x="834" y="278" width="683" height="476" key="find.popup/0.23.1680.965@0.23.1680.965" timestamp="1575107727468" />
+    <state x="834" y="278" width="683" height="477" key="find.popup/0.23.1680.966@0.23.1680.966" timestamp="1574998663208" />
+    <state x="834" y="278" width="683" height="476" key="find.popup/0.23.1680.967@0.23.1680.967" timestamp="1575107426936" />
     <state x="834" y="279" width="683" height="476" key="find.popup/0.23.1680.972@0.23.1680.972" timestamp="1574878000179" />
-    <state x="953" y="285" width="639" height="476" key="find.popup/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1574936205612" />
-    <state x="938" y="235" width="766" height="709" key="search.everywhere.popup" timestamp="1574866215590">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="953" y="285" width="639" height="476" key="find.popup/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1575023824655" />
+    <state x="821" y="242" width="670" height="659" key="search.everywhere.popup" timestamp="1575106930838">
+      <screen x="0" y="23" width="1680" height="967" />
     </state>
     <state x="938" y="235" width="766" height="709" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1574866215590" />
+    <state x="821" y="242" width="670" height="659" key="search.everywhere.popup/0.23.1680.967@0.23.1680.967" timestamp="1575106930838" />
     <state x="821" y="243" width="670" height="662" key="search.everywhere.popup/0.23.1680.972@0.23.1680.972" timestamp="1574866127630" />
-    <state x="938" y="248" width="670" height="676" key="search.everywhere.popup/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1574835964580" />
+    <state x="938" y="248" width="670" height="676" key="search.everywhere.popup/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1575002522483" />
   </component>
 </project>

@@ -5,6 +5,9 @@ const path = require('path')
 const cookieParser = require('cookie-parser')
 const logger = require('morgan')
 
+// ===== MESSENGER =============================================================
+const ThreadSetup = require('./routes/messenger_api_helper/thread-setup')
+
 // ===== ROUTES ================================================================
 const indexRouter = require('./routes/index')
 const usersRouter = require('./routes/users')
@@ -30,7 +33,21 @@ app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
 /* ----------  Static Assets  ---------- */
-app.use(express.static(path.join(__dirname, 'public')))
+if(process.env.NODE_ENV === 'production'){
+  console.log('RUNNING PRODUCTION BUILD')
+  app.use(express.static(path.join(__dirname, 'client/build')))
+  app.get("*", (req, res)=>{
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+  })
+} else{
+  // console.log('RUNNING DEV BUILD')
+  // app.use(express.static(path.join(__dirname, 'public')))
+  app.use(express.static(path.join(__dirname, 'client/build')))
+  app.get("*", (req, res)=>{
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+  })
+}
+
 
 /* ----------  Parsers  ---------- */
 app.use(express.json())
@@ -44,8 +61,11 @@ app.use(logger('dev'))
    =                   Routes                  =
    ============================================= */
 
+/* ----------  Messenger setup  ---------- */
+ThreadSetup.setDomainWhitelisting();
+
 /* ----------  Primary / Happy Path  ---------- */
-app.use('/', indexRouter)
+// app.use('/', indexRouter)
 app.use('/users', usersRouter)
 app.use('/gateway', gatewayRouter)
 

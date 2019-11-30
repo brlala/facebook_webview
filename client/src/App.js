@@ -8,6 +8,8 @@ import Login from './components/auth/Login'
 import Alert from './components/layout/Alert'
 import Underwriting from './components/underwriting/Underwriting'
 import PrivateRoute from './components/routing/PrivateRoute'
+import Oops from './components/layout/Oops';
+import { connect } from 'react-redux'
 
 // Redux
 import { loadUser } from './actions/auth'
@@ -19,10 +21,15 @@ if (localStorage.token) {
   setAuthToken(localStorage.token)
 }
 
-const App = () => {
+const App = ({userId}) => {
+  console.log(userId)
   useEffect(() => {
     store.dispatch(loadUser());
   }, [])
+
+  // return(
+  //   <Oops/>
+  // )
 
   return (
     <Provider store={store}>
