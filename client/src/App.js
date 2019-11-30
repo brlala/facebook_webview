@@ -26,6 +26,8 @@ const App = () => {
     store.dispatch(loadUser());
   }, [])
 
+  console.log('loading 3 '+window.loading)
+  console.log(window.psid)
   if (!window.psid){
     return(
       <Oops/>

@@ -30,7 +30,7 @@
     MessengerExtensions.getContext('%REACT_APP_APP_ID%',
       function success (thread_context) {
         const signed_request = thread_context.signed_request
-        const psid = thread_context.psid // THIS PSID IS NOW MISSING!
+        const psid = window.psid = thread_context.psid // THIS PSID IS NOW MISSING!
 
         console.log(
           '***** Messenger Extensions Loaded! \n',
