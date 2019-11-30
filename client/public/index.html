@@ -5,10 +5,7 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="theme-color" content="#000000"/>
-    <meta
-            name="description"
-            content="Web site created using create-react-app"
-    />
+    <meta name="description" content="Web site created using create-react-app"/>
     <link rel="apple-touch-icon" href="logo192.png"/>
     <link rel="apple-touch-icon" href="logo192.png"/>
     <script src="https://kit.fontawesome.com/158b055203.js" crossorigin="anonymous"></script>
@@ -18,13 +15,12 @@
 </head>
 <body>
 <!--  Messenger Script-->
-<script src="../src/index.js"></script>
 <script>
   window.extAsyncInit = function () {
     MessengerExtensions.getContext('%REACT_APP_APP_ID%',
-      function success(thread_context){
+      function success (thread_context) {
         const signed_request = thread_context.signed_request
-        const psid = thread_context.psid // THIS PSID IS NOW MISSING!
+        const psid = window.psid = thread_context.psid // THIS PSID IS NOW MISSING!
 
         console.log(
           '***** Messenger Extensions Loaded! \n',
@@ -39,26 +35,27 @@
           MessengerExtensions.requestCloseBrowser(
             () => {},
             () => {document.body.innerHTML = 'Error closing window. Please close the window manually.'})
-      }},
-      function error(err){
-        alert("error"+err)
+        }
+      },
+      function error (err) {
+        alert('Error encountered: ' + err)
         MessengerExtensions.requestCloseBrowser(
           () => {},
           () => {document.body.innerHTML = 'Error closing window. Please close the window manually.'})
-      }
-    );
+      },
+    )
   };
 
-  (function(doc, script, domId){
-    var js, fjs = doc.getElementsByTagName(script)[0];
-    if (doc.getElementById(domId)) { return; }
-    js = doc.createElement(script);
-    js.id = domId;
-    js.src = "//connect.facebook.com/en_US/messenger.Extensions.js";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'Messenger'));
+  (function (doc, script, domId) {
+    var js, fjs = doc.getElementsByTagName(script)[0]
+    if (doc.getElementById(domId)) { return }
+    js = doc.createElement(script)
+    js.id = domId
+    js.src = '//connect.facebook.com/en_US/messenger.Extensions.js'
+    fjs.parentNode.insertBefore(js, fjs)
+  }(document, 'script', 'Messenger'))
 </script>
 <noscript>You need to enable JavaScript to run this app.</noscript>
-<div id="root" data-param="https://website.biz/api/"></div>
+<div id="root"></div>
 </body>
 </html>

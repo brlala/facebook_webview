@@ -21,15 +21,17 @@ if (localStorage.token) {
   setAuthToken(localStorage.token)
 }
 
-const App = ({userId}) => {
-  console.log(userId)
+const App = () => {
+  console.log(window.psid)
   useEffect(() => {
     store.dispatch(loadUser());
   }, [])
 
-  // return(
-  //   <Oops/>
-  // )
+  if (!window.psid){
+    return(
+      <Oops/>
+    )
+  }
 
   return (
     <Provider store={store}>
