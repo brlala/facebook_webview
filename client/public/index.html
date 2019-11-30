@@ -16,8 +16,18 @@
 <body>
 <!--  Messenger Script-->
 <script>
+  alert('%REACT_APP_APP_ID%')
+  (function (doc, script, domId) {
+    var js, fjs = doc.getElementsByTagName(script)[0]
+    if (doc.getElementById(domId)) { return }
+    js = doc.createElement(script)
+    js.id = domId
+    js.src = '//connect.facebook.com/en_US/messenger.Extensions.js'
+    fjs.parentNode.insertBefore(js, fjs)
+  }(document, 'script', 'Messenger'))
+
   window.extAsyncInit = function () {
-    alert('%REACT_APP_APP_ID%')
+    alert('Load Script Complete')
     MessengerExtensions.getContext('%REACT_APP_APP_ID%',
       function success (thread_context) {
         const signed_request = thread_context.signed_request
@@ -47,14 +57,6 @@
     )
   };
 
-  (function (doc, script, domId) {
-    var js, fjs = doc.getElementsByTagName(script)[0]
-    if (doc.getElementById(domId)) { return }
-    js = doc.createElement(script)
-    js.id = domId
-    js.src = '//connect.facebook.com/en_US/messenger.Extensions.js'
-    fjs.parentNode.insertBefore(js, fjs)
-  }(document, 'script', 'Messenger'))
 </script>
 <noscript>You need to enable JavaScript to run this app.</noscript>
 <div id="root"></div>
