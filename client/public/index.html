@@ -32,7 +32,6 @@
     MessengerExtensions.getContext(
       '%REACT_APP_APP_ID%',
       context => {
-        const search_params = Qs.parse(window.location.search.substr(1))
         const signed_request = context.signed_request
         const psid = context.psid // THIS PSID IS NOW MISSING!
 
@@ -41,22 +40,17 @@
           'Context: \n',
           context,
           '\n App ID: ',
-          'asd',
+          '%REACT_APP_APP_ID%',
           '\n ******',
         )
 
-        if (!search_params.resource_url || !signed_request || !psid) {
+        if (!signed_request || !psid) {
           MessengerExtensions.requestCloseBrowser(
             () => {},
-            () => {
-              document.body.innerHTML = 'Error closing window. Please close.'
-            },
-          )
+            () => {document.body.innerHTML = 'Error closing window. Please close the window manually.'})
         }
       })
   }
-
-
 </script>
 <noscript>You need to enable JavaScript to run this app.</noscript>
 <div id="root" data-param="https://website.biz/api/"></div>

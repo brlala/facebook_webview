@@ -40,12 +40,12 @@ if(process.env.NODE_ENV === 'production'){
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
   })
 } else{
-  // console.log('RUNNING DEV BUILD')
-  // app.use(express.static(path.join(__dirname, 'public')))
-  app.use(express.static(path.join(__dirname, 'client/build')))
-  app.get("*", (req, res)=>{
-    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
-  })
+  console.log('RUNNING DEV BUILD')
+  app.use(express.static(path.join(__dirname, 'public')))
+  // app.use(express.static(path.join(__dirname, 'client/build')))
+  // app.get("*", (req, res)=>{
+  //   res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+  // })
 }
 
 
@@ -62,7 +62,7 @@ app.use(logger('dev'))
    ============================================= */
 
 /* ----------  Messenger setup  ---------- */
-ThreadSetup.setDomainWhitelisting();
+// ThreadSetup.setDomainWhitelisting();
 
 /* ----------  Primary / Happy Path  ---------- */
 // app.use('/', indexRouter)
