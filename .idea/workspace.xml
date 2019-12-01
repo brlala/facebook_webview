@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="364e187b-fcb0-488d-a1dd-bb396981992d" name="Default Changelist" comment="fixing api calls">
+    <list default="true" id="364e187b-fcb0-488d-a1dd-bb396981992d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -422,7 +421,21 @@
       <option name="project" value="LOCAL" />
       <updated>1575182530147</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="testing fb.payload">
+      <created>1575186088255</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1575186088255</updated>
+    </task>
+    <task id="LOCAL-00045" summary="testing fb.payload">
+      <created>1575186274074</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1575186274074</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -442,7 +455,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added redux store" />
     <MESSAGE value="added a demo page" />
     <MESSAGE value="added reducer and dispatch to demo page" />
     <MESSAGE value="completed component for alert type" />
@@ -467,7 +479,8 @@
     <MESSAGE value="finished loading category, moving to implementing sub category and button click" />
     <MESSAGE value="added facebook auth on underwriting page" />
     <MESSAGE value="fixing api calls" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing api calls" />
+    <MESSAGE value="testing fb.payload" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing fb.payload" />
   </component>
   <component name="WindowStateProjectService">
     <state x="820" y="207" key="#Plugins" timestamp="1574836118128">
@@ -492,10 +505,10 @@
       <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state x="951" y="390" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1680.972@0.23.1680.972" timestamp="1574866125189" />
-    <state x="734" y="131" key="CommitChangelistDialog2" timestamp="1575186086083">
+    <state x="734" y="131" key="CommitChangelistDialog2" timestamp="1575191045796">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="734" y="131" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575186086083" />
+    <state x="734" y="131" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575191045796" />
     <state x="488" y="144" key="CommitChangelistDialog2/0.23.1680.965@0.23.1680.965" timestamp="1575108983650" />
     <state x="642" y="145" key="CommitChangelistDialog2/0.23.1680.966@0.23.1680.966" timestamp="1575141452512" />
     <state x="488" y="144" key="CommitChangelistDialog2/0.23.1680.967@0.23.1680.967" timestamp="1575104612417" />
@@ -548,10 +561,10 @@
     <state x="683" y="158" key="SettingsEditor/0.23.1680.967@0.23.1680.967" timestamp="1575019288901" />
     <state x="683" y="159" key="SettingsEditor/0.23.1680.972@0.23.1680.972" timestamp="1574866099704" />
     <state x="782" y="162" key="SettingsEditor/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1575002581476" />
-    <state x="1006" y="129" key="Vcs.Push.Dialog.v2" timestamp="1575186090936">
+    <state x="1006" y="129" key="Vcs.Push.Dialog.v2" timestamp="1575186275405">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1006" y="129" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575186090936" />
+    <state x="1006" y="129" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575186275405" />
     <state x="880" y="143" key="Vcs.Push.Dialog.v2/0.23.1680.965@0.23.1680.965" timestamp="1575108985920" />
     <state x="880" y="143" key="Vcs.Push.Dialog.v2/0.23.1680.966@0.23.1680.966" timestamp="1575141454855" />
     <state x="880" y="142" key="Vcs.Push.Dialog.v2/0.23.1680.967@0.23.1680.967" timestamp="1574793067881" />
