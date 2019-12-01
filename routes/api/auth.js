@@ -77,12 +77,11 @@ router.post('/facebook', [
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.array() })
     }
-
     const { signed_request } = req.body
     let [encodedSig, fb_payload] = signed_request.split('.')
 
     // decoding the data
-    const encoding = 'ascii'
+    const encoding = 'hex'
     const sig = Buffer.from(encodedSig, 'base64').toString(encoding)
     const data = JSON.parse(Buffer.from(fb_payload, 'base64').toString('ascii'))
 
@@ -95,8 +94,6 @@ router.post('/facebook', [
       return res.status(400).
         json({ errors: [{ msg: 'The fingerprint of payload is invalid.' }] })
     }
-
-    // res.send(sig + '\n' + expected_sig)
 
     try {
       const query = { 'facebook.id': data.psid, 'chatbot.verified': true }
@@ -112,7 +109,6 @@ router.post('/facebook', [
         },
         data: data
       }
-      res.send(payload)
 
       jwt.sign(
         payload,

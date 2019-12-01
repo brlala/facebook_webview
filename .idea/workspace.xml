@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="364e187b-fcb0-488d-a1dd-bb396981992d" name="Default Changelist" comment="finished loading category, moving to implementing sub category and button click">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/actions/facebook/facebook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/reducers/facebook.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Messenger.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/facebook/facebook.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/facebook/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/underwriting/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/underwriting/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/auth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +44,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="13.2.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -384,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575141452668</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="finished loading category, moving to implementing sub category and button click">
+      <created>1575177309587</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1575177309587</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,7 +425,6 @@
     <MESSAGE value="completed verification moving on to data showing" />
     <MESSAGE value="added Private Route" />
     <MESSAGE value="completed up to retrieving category" />
-    <MESSAGE value="finished loading category, moving to implementing sub category and button click" />
     <MESSAGE value="completed all features to posting to gateway" />
     <MESSAGE value="adding messenger extension script" />
     <MESSAGE value="change port to 4001" />
@@ -429,7 +434,8 @@
     <MESSAGE value="change facebook script" />
     <MESSAGE value="passing of psid reference" />
     <MESSAGE value="testing conditional rendering" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing conditional rendering" />
+    <MESSAGE value="finished loading category, moving to implementing sub category and button click" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished loading category, moving to implementing sub category and button click" />
   </component>
   <component name="WindowStateProjectService">
     <state x="820" y="207" key="#Plugins" timestamp="1574836118128">
@@ -453,10 +459,10 @@
       <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state x="951" y="390" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1680.972@0.23.1680.972" timestamp="1574866125189" />
-    <state x="734" y="131" key="CommitChangelistDialog2" timestamp="1575175936757">
+    <state x="734" y="131" key="CommitChangelistDialog2" timestamp="1575179212293">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="734" y="131" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575175936757" />
+    <state x="734" y="131" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575179212293" />
     <state x="488" y="144" key="CommitChangelistDialog2/0.23.1680.965@0.23.1680.965" timestamp="1575108983650" />
     <state x="642" y="145" key="CommitChangelistDialog2/0.23.1680.966@0.23.1680.966" timestamp="1575141452512" />
     <state x="488" y="144" key="CommitChangelistDialog2/0.23.1680.967@0.23.1680.967" timestamp="1575104612417" />
@@ -466,6 +472,10 @@
       <screen x="0" y="23" width="1920" height="993" />
     </state>
     <state x="355" y="138" key="DiffContextDialog/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1574990996915" />
+    <state x="1123" y="292" key="FileChooserDialogImpl" timestamp="1575179055044">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1123" y="292" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575179055044" />
     <state x="892" y="57" key="FileDocumentManager.FileCacheConflict" timestamp="1574749732640">
       <screen x="0" y="23" width="1920" height="993" />
     </state>
@@ -519,10 +529,10 @@
     <state x="100" y="105" width="1720" height="831" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575176094992" />
     <state x="0" y="93" width="1680" height="793" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1680.966@0.23.1680.966" timestamp="1574928566585" />
     <state x="100" y="123" width="1720" height="793" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1574929942323" />
-    <state x="953" y="275" width="781" height="526" key="find.popup" timestamp="1575176776744">
+    <state x="953" y="275" width="781" height="526" key="find.popup" timestamp="1575179064259">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="953" y="275" width="781" height="526" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575176776744" />
+    <state x="953" y="275" width="781" height="526" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575179064259" />
     <state x="834" y="278" width="683" height="476" key="find.popup/0.23.1680.965@0.23.1680.965" timestamp="1575107727468" />
     <state x="834" y="278" width="683" height="477" key="find.popup/0.23.1680.966@0.23.1680.966" timestamp="1575139747402" />
     <state x="834" y="278" width="683" height="476" key="find.popup/0.23.1680.967@0.23.1680.967" timestamp="1575107426936" />

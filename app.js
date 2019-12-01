@@ -62,7 +62,7 @@ app.use(logger('dev'))
    ============================================= */
 
 /* ----------  Messenger setup  ---------- */
-ThreadSetup.setDomainWhitelisting();
+// ThreadSetup.setDomainWhitelisting();
 
 /* ----------  Primary / Happy Path  ---------- */
 // app.use('/', indexRouter)

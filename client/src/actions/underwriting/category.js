@@ -13,7 +13,7 @@ import {
 // Get categories list
 export const getCategories = () => async dispatch => {
   try {
-    const res = await axios.get('/api/underwriting')
+    const res = await axios.get('api/underwriting')
     dispatch({
       type: GET_CATEGORY,
       payload: res.data,
@@ -29,7 +29,7 @@ export const getCategories = () => async dispatch => {
 // Get selected category
 export const getSubcategories = subcategory => async dispatch => {
   try {
-    const res = await axios.get(`/api/underwriting/${subcategory}`)
+    const res = await axios.get(`api/underwriting/${subcategory}`)
     dispatch({
       type: GET_SUBCATEGORY,
       payload: res.data,
