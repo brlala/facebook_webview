@@ -20,9 +20,9 @@
     var event = new Event("fb_msg_event");
 
     setTimeout(() => {
-        window.test_param = "hi there";
+        window.test_param = "This app will load after 1 second.";
         document.getElementById("root").dispatchEvent(event);
-    }, 2000);
+    }, 1000);
 
     (function (doc, script, domId) {
         var js, fjs = doc.getElementsByTagName(script)[0]
@@ -40,7 +40,7 @@
             function success(thread_context) {
                 const signed_request = thread_context.signed_request
                 const psid = thread_context.psid // THIS PSID IS NOW MISSING!
-                window.fbPayload = psid
+                window.fbPayload = thread_context
 
                 console.log(
                     '***** Messenger Extensions Loaded! \n',
