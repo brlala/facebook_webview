@@ -26,39 +26,44 @@
   }(document, 'script', 'Messenger'))
 
   window.extAsyncInit = function () {
-    window.loading = true
-    MessengerExtensions.getContext('%REACT_APP_APP_ID%',
-      function success (thread_context) {
-        const signed_request = thread_context.signed_request
-        const psid = window.psid = thread_context.psid // THIS PSID IS NOW MISSING!
-
-        console.log(
-          '***** Messenger Extensions Loaded! \n',
-          'Context: \n',
-          thread_context,
-          '\n App ID: ',
-          '%REACT_APP_APP_ID%',
-          '\n ******',
-        )
-
-        if (!signed_request || !psid) {
-          MessengerExtensions.requestCloseBrowser(
-            () => {},
-            () => {document.body.innerHTML = 'Error closing window. Please close the window manually.'})
-        }
-
-        window.loading = false
-      },
-      function error (err) {
-        MessengerExtensions.requestCloseBrowser(
-          () => {},
-          () => {document.body.innerHTML = 'Error closing window. Please close the window manually.'})
-      },
-    )
+    // MessengerExtensions.getContext('%REACT_APP_APP_ID%',
+    //   function success (thread_context) {
+    //     const signed_request = thread_context.signed_request
+    //     const psid = window.psid = thread_context.psid // THIS PSID IS NOW MISSING!
+    //
+    //     console.log(
+    //       '***** Messenger Extensions Loaded! \n',
+    //       'Context: \n',
+    //       thread_context,
+    //       '\n App ID: ',
+    //       '%REACT_APP_APP_ID%',
+    //       '\n ******',
+    //     )
+    //
+    //     if (!signed_request || !psid) {
+    //       MessengerExtensions.requestCloseBrowser(
+    //         () => {},
+    //         () => {document.body.innerHTML = 'Error closing window. Please close the window manually.'})
+    //     }
+    //   },
+    //   function error (err) {
+    //     MessengerExtensions.requestCloseBrowser(
+    //       () => {},
+    //       () => {document.body.innerHTML = 'Error closing window. Please close the window manually.'})
+    //   },
+    // )
+      window.fbPayload = {
+          "tid": "2114834805260152",
+          "thread_type": "USER_TO_PAGE",
+          "psid": "2114834805260152",
+          "signed_request": "DnCN94XCQ3dTXJg6FJGBguJFtwhEcTw51bumAeCmQc4.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImNvbW11bml0eV9pZCI6bnVsbCwiaXNzdWVkX2F0IjoxNTc1MTczNjUwLCJtZXRhZGF0YSI6bnVsbCwicGFnZV9pZCI6MzQ1OTA2MjE5MzgzNTcyLCJwc2lkIjoiMjExNDgzNDgwNTI2MDE1MiIsInRocmVhZF9wYXJ0aWNpcGFudF9pZHMiOm51bGwsInRocmVhZF90eXBlIjoiVVNFUl9UT19QQUdFIiwidGlkIjoiMjExNDgzNDgwNTI2MDE1MiJ9",
+          "metadata": null
+      }
   };
+
 
 </script>
 <noscript>You need to enable JavaScript to run this app.</noscript>
-
+<div id="root"></div>
 </body>
 </html>
