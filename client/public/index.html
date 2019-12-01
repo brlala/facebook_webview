@@ -12,47 +12,55 @@
 
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
     <title>Welcome to your ReactApp</title>
+
 </head>
 <body>
 <!--  Messenger Script-->
 <script>
-  (function (doc, script, domId) {
-    var js, fjs = doc.getElementsByTagName(script)[0]
-    if (doc.getElementById(domId)) { return }
-    js = doc.createElement(script)
-    js.id = domId
-    js.src = '//connect.facebook.com/en_US/messenger.Extensions.js'
-    fjs.parentNode.insertBefore(js, fjs)
-  }(document, 'script', 'Messenger'))
+    var event = new Event("fb_msg_event");
 
-  window.extAsyncInit = function () {
-    MessengerExtensions.getContext('%REACT_APP_APP_ID%',
-      function success (thread_context) {
-        const signed_request = thread_context.signed_request
-        const psid = thread_context.psid // THIS PSID IS NOW MISSING!
-        window.fbPayload = psid
+    setTimeout(() => {
+        window.test_param = "hi there";
+        document.getElementById("root").dispatchEvent(event);
+    }, 2000);
 
-        console.log(
-          '***** Messenger Extensions Loaded! \n',
-          'Context: \n',
-          thread_context,
-          '\n App ID: ',
-          '%REACT_APP_APP_ID%',
-          '\n ******',
-        )
-
-        if (!signed_request || !psid) {
-          MessengerExtensions.requestCloseBrowser(
-            () => {},
-            () => {document.body.innerHTML = 'Error closing window. Please close the window manually.'})
-        }
-      },
-      function error (err) {
-        MessengerExtensions.requestCloseBrowser(
-          () => {},
-          () => {document.body.innerHTML = 'Error closing window. Please close the window manually.'})
-      },
-    )
+  // (function (doc, script, domId) {
+  //   var js, fjs = doc.getElementsByTagName(script)[0]
+  //   if (doc.getElementById(domId)) { return }
+  //   js = doc.createElement(script)
+  //   js.id = domId
+  //   js.src = '//connect.facebook.com/en_US/messenger.Extensions.js'
+  //   fjs.parentNode.insertBefore(js, fjs)
+  // }(document, 'script', 'Messenger'))
+  //
+  // window.extAsyncInit = function () {
+  //   MessengerExtensions.getContext('%REACT_APP_APP_ID%',
+  //     function success (thread_context) {
+  //       const signed_request = thread_context.signed_request
+  //       const psid = thread_context.psid // THIS PSID IS NOW MISSING!
+  //       window.fbPayload = psid
+  //
+  //       console.log(
+  //         '***** Messenger Extensions Loaded! \n',
+  //         'Context: \n',
+  //         thread_context,
+  //         '\n App ID: ',
+  //         '%REACT_APP_APP_ID%',
+  //         '\n ******',
+  //       )
+  //
+  //       if (!signed_request || !psid) {
+  //         MessengerExtensions.requestCloseBrowser(
+  //           () => {},
+  //           () => {document.body.innerHTML = 'Error closing window. Please close the window manually.'})
+  //       }
+  //     },
+  //     function error (err) {
+  //       MessengerExtensions.requestCloseBrowser(
+  //         () => {},
+  //         () => {document.body.innerHTML = 'Error closing window. Please close the window manually.'})
+  //     },
+  //   )
       // window.fbPayload = {
       //     "tid": "2114834805260152",
       //     "thread_type": "USER_TO_PAGE",
@@ -60,7 +68,7 @@
       //     "signed_request": "DnCN94XCQ3dTXJg6FJGBguJFtwhEcTw51bumAeCmQc4.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImNvbW11bml0eV9pZCI6bnVsbCwiaXNzdWVkX2F0IjoxNTc1MTczNjUwLCJtZXRhZGF0YSI6bnVsbCwicGFnZV9pZCI6MzQ1OTA2MjE5MzgzNTcyLCJwc2lkIjoiMjExNDgzNDgwNTI2MDE1MiIsInRocmVhZF9wYXJ0aWNpcGFudF9pZHMiOm51bGwsInRocmVhZF90eXBlIjoiVVNFUl9UT19QQUdFIiwidGlkIjoiMjExNDgzNDgwNTI2MDE1MiJ9",
       //     "metadata": null
       // }
-  };
+  // };
 
 
 </script>
