@@ -1,8 +1,8 @@
 import axios from 'axios'
 
 import {
-    FB_PSID_LOAD_FAIL,
-    FB_PSID_LOADED, LOGIN_FAIL, LOGIN_SUCCESS
+    FB_PSID_LOGIN_FAIL,
+    FB_PSID_LOGIN_SUCCESS
 } from '../types'
 import {setAlert} from "../alert";
 import {loadUser} from "../auth";
@@ -21,7 +21,7 @@ export const facebookLogin = fbPayload => async dispatch => {
         const res = await axios.post('/api/auth/facebook', body, config)
 
         dispatch({
-            type: LOGIN_SUCCESS,
+            type: FB_PSID_LOGIN_SUCCESS,
             payload: res.data,
         })
 
@@ -33,7 +33,7 @@ export const facebookLogin = fbPayload => async dispatch => {
         }
 
         dispatch({
-            type: LOGIN_FAIL,
+            type: FB_PSID_LOGIN_FAIL,
         })
     }
 }

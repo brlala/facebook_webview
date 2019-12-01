@@ -7,7 +7,6 @@ import {
   SUBCATEGORY_ERROR,
   SEND_SELECTION_SUCCESSFUL,
   SEND_SELECTION_FAIL,
-  CLOSE_WINDOW,
 } from '../types'
 
 // Get categories list

@@ -1,0 +1,23 @@
+.static-page {
+    display: flex;
+    height: 100vh;
+    font-weight: 200;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.static-page-body {
+    width: 30em;
+}
+
+.static-page h1 {
+    font-weight: 300;
+}
+
+.static-page-subtitle {
+    color: #888888;
+}

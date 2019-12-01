@@ -1,7 +1,4 @@
-import axios from "axios";
-import {CLOSE_WINDOW, LOGIN_FAIL, LOGIN_SUCCESS} from "../types";
-import {setAlert} from "../alert";
-import {loadUser} from "../auth";
+import {CLOSE_WINDOW} from "../types";
 
 /**
  * Close the webview inside Messenger

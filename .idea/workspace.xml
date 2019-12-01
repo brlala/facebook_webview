@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="364e187b-fcb0-488d-a1dd-bb396981992d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/actions/facebook/webview-controls.js" afterDir="false" />
+    <list default="true" id="364e187b-fcb0-488d-a1dd-bb396981992d" name="Default Changelist" comment="formatted">
+      <change afterPath="$PROJECT_DIR$/client/src/components/layout/Oops.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/actions/facebook/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/facebook/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/facebook/webview-controls.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/facebook/webview-controls.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/types.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/actions/underwriting/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/underwriting/category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/underwriting/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/underwriting/Category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layout/Oops.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/Oops.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/reducers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/reducers/facebook.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/facebook.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/messenger_api_helper/thread-setup.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/messenger_api_helper/thread-setup.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,13 +129,6 @@
       <workItem from="1574905988829" duration="22807000" />
       <workItem from="1574935795477" duration="26680000" />
       <workItem from="1575112364654" duration="11312000" />
-    </task>
-    <task id="LOCAL-00003" summary="connected database">
-      <created>1574739657139</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1574739657139</updated>
     </task>
     <task id="LOCAL-00004" summary="connected database">
       <created>1574739890720</created>
@@ -469,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575194220063</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="adding close method for facebook">
+      <created>1575195851336</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1575195851336</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -489,7 +493,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="completed alert component for registering" />
     <MESSAGE value="added users login route" />
     <MESSAGE value="added authentication middleware" />
     <MESSAGE value="completed react registration part" />
@@ -514,7 +517,8 @@
     <MESSAGE value="testing set time out function" />
     <MESSAGE value="use constant window.fbpayload" />
     <MESSAGE value="adding event listener" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding event listener" />
+    <MESSAGE value="adding close method for facebook" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding close method for facebook" />
   </component>
   <component name="WindowStateProjectService">
     <state x="820" y="207" key="#Plugins" timestamp="1574836118128">
@@ -539,10 +543,10 @@
       <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state x="951" y="390" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1680.972@0.23.1680.972" timestamp="1574866125189" />
-    <state x="734" y="131" key="CommitChangelistDialog2" timestamp="1575194218074">
+    <state x="734" y="131" key="CommitChangelistDialog2" timestamp="1575201652125">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="734" y="131" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575194218074" />
+    <state x="734" y="131" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575201652125" />
     <state x="488" y="144" key="CommitChangelistDialog2/0.23.1680.965@0.23.1680.965" timestamp="1575108983650" />
     <state x="642" y="145" key="CommitChangelistDialog2/0.23.1680.966@0.23.1680.966" timestamp="1575141452512" />
     <state x="488" y="144" key="CommitChangelistDialog2/0.23.1680.967@0.23.1680.967" timestamp="1575104612417" />
@@ -595,10 +599,10 @@
     <state x="683" y="158" key="SettingsEditor/0.23.1680.967@0.23.1680.967" timestamp="1575019288901" />
     <state x="683" y="159" key="SettingsEditor/0.23.1680.972@0.23.1680.972" timestamp="1574866099704" />
     <state x="782" y="162" key="SettingsEditor/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1575002581476" />
-    <state x="1006" y="129" key="Vcs.Push.Dialog.v2" timestamp="1575194222428">
+    <state x="1006" y="129" key="Vcs.Push.Dialog.v2" timestamp="1575195852441">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1006" y="129" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575194222428" />
+    <state x="1006" y="129" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575195852441" />
     <state x="880" y="143" key="Vcs.Push.Dialog.v2/0.23.1680.965@0.23.1680.965" timestamp="1575108985920" />
     <state x="880" y="143" key="Vcs.Push.Dialog.v2/0.23.1680.966@0.23.1680.966" timestamp="1575141454855" />
     <state x="880" y="142" key="Vcs.Push.Dialog.v2/0.23.1680.967@0.23.1680.967" timestamp="1574793067881" />
@@ -610,10 +614,10 @@
     <state x="100" y="105" width="1720" height="831" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575176094992" />
     <state x="0" y="93" width="1680" height="793" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1680.966@0.23.1680.966" timestamp="1574928566585" />
     <state x="100" y="123" width="1720" height="793" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1574929942323" />
-    <state x="953" y="275" width="781" height="526" key="find.popup" timestamp="1575195210856">
+    <state x="953" y="275" width="781" height="526" key="find.popup" timestamp="1575198751042">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="953" y="275" width="781" height="526" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575195210856" />
+    <state x="953" y="275" width="781" height="526" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575198751042" />
     <state x="834" y="278" width="683" height="476" key="find.popup/0.23.1680.965@0.23.1680.965" timestamp="1575107727468" />
     <state x="834" y="278" width="683" height="477" key="find.popup/0.23.1680.966@0.23.1680.966" timestamp="1575139747402" />
     <state x="834" y="278" width="683" height="476" key="find.popup/0.23.1680.967@0.23.1680.967" timestamp="1575107426936" />

@@ -26,10 +26,10 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     <nav className="navbar bg-dark">
       <h1>
         <Link to='/'>
-          <i className="fas fa-code"/> GELM Webview Microapp</Link>
+          <i className="fas fa-code"/> Underwriting Guide</Link>
       </h1>
-      {!loading &&
-      (<Fragment>{isAuthenticated ? authLinks : guestLinks}</Fragment>)}
+      {/*{!loading &&*/}
+      {/*(<Fragment>{isAuthenticated ? authLinks : guestLinks}</Fragment>)}*/}
     </nav>
   )
 }

@@ -1,4 +1,4 @@
-import {FB_PSID_LOADED, CLOSE_WINDOW} from '../actions/types'
+import {FB_PSID_LOGIN_SUCCESS, CLOSE_WINDOW} from '../actions/types'
 
 const initialState = {
     loading: true,
@@ -10,7 +10,7 @@ export default function (state = initialState, action) {
     const {type, payload} = action
 
     switch (type) {
-        case FB_PSID_LOADED:
+        case FB_PSID_LOGIN_SUCCESS:
             return {
                 ...state,
                 data: payload,

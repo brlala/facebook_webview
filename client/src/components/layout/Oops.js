@@ -1,4 +1,5 @@
 import React from 'react';
+import './Oops.css'
 
 /*
  * MessengerExtensions validation error,
