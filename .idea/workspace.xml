@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="364e187b-fcb0-488d-a1dd-bb396981992d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -435,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575186274074</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="testing set time out function">
+      <created>1575191048085</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1575191048096</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,7 +461,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added a demo page" />
     <MESSAGE value="added reducer and dispatch to demo page" />
     <MESSAGE value="completed component for alert type" />
     <MESSAGE value="completed alert component for registering" />
@@ -480,7 +485,8 @@
     <MESSAGE value="added facebook auth on underwriting page" />
     <MESSAGE value="fixing api calls" />
     <MESSAGE value="testing fb.payload" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing fb.payload" />
+    <MESSAGE value="testing set time out function" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing set time out function" />
   </component>
   <component name="WindowStateProjectService">
     <state x="820" y="207" key="#Plugins" timestamp="1574836118128">
@@ -561,10 +567,10 @@
     <state x="683" y="158" key="SettingsEditor/0.23.1680.967@0.23.1680.967" timestamp="1575019288901" />
     <state x="683" y="159" key="SettingsEditor/0.23.1680.972@0.23.1680.972" timestamp="1574866099704" />
     <state x="782" y="162" key="SettingsEditor/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1575002581476" />
-    <state x="1006" y="129" key="Vcs.Push.Dialog.v2" timestamp="1575186275405">
+    <state x="1006" y="129" key="Vcs.Push.Dialog.v2" timestamp="1575191049731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1006" y="129" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575186275405" />
+    <state x="1006" y="129" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575191049731" />
     <state x="880" y="143" key="Vcs.Push.Dialog.v2/0.23.1680.965@0.23.1680.965" timestamp="1575108985920" />
     <state x="880" y="143" key="Vcs.Push.Dialog.v2/0.23.1680.966@0.23.1680.966" timestamp="1575141454855" />
     <state x="880" y="142" key="Vcs.Push.Dialog.v2/0.23.1680.967@0.23.1680.967" timestamp="1574793067881" />
