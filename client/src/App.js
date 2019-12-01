@@ -23,20 +23,20 @@ if (localStorage.token) {
 }
 
 const App = () => {
-  window.fbPayload = {
-    "tid": "2114834805260152",
-    "thread_type": "USER_TO_PAGE",
-    "psid": "2114834805260152",
-    "signed_request": "DnCN94XCQ3dTXJg6FJGBguJFtwhEcTw51bumAeCmQc4.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImNvbW11bml0eV9pZCI6bnVsbCwiaXNzdWVkX2F0IjoxNTc1MTczNjUwLCJtZXRhZGF0YSI6bnVsbCwicGFnZV9pZCI6MzQ1OTA2MjE5MzgzNTcyLCJwc2lkIjoiMjExNDgzNDgwNTI2MDE1MiIsInRocmVhZF9wYXJ0aWNpcGFudF9pZHMiOm51bGwsInRocmVhZF90eXBlIjoiVVNFUl9UT19QQUdFIiwidGlkIjoiMjExNDgzNDgwNTI2MDE1MiJ9",
-    "metadata": null
-  }
+  // window.fbPayload = {
+  //   "tid": "2114834805260152",
+  //   "thread_type": "USER_TO_PAGE",
+  //   "psid": "2114834805260152",
+  //   "signed_request": "DnCN94XCQ3dTXJg6FJGBguJFtwhEcTw51bumAeCmQc4.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImNvbW11bml0eV9pZCI6bnVsbCwiaXNzdWVkX2F0IjoxNTc1MTczNjUwLCJtZXRhZGF0YSI6bnVsbCwicGFnZV9pZCI6MzQ1OTA2MjE5MzgzNTcyLCJwc2lkIjoiMjExNDgzNDgwNTI2MDE1MiIsInRocmVhZF9wYXJ0aWNpcGFudF9pZHMiOm51bGwsInRocmVhZF90eXBlIjoiVVNFUl9UT19QQUdFIiwidGlkIjoiMjExNDgzNDgwNTI2MDE1MiJ9",
+  //   "metadata": null
+  // }
+  console.log(window.fbPayload)
   useEffect(() => {
     store.dispatch(facebookLogin(window.fbPayload))
     store.dispatch(loadUser());
   }, [])
 
   return (
-
     <Provider store={store}>
       <Router>
         <Fragment>
