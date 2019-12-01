@@ -10,4 +10,3 @@ document.getElementById("root").addEventListener("fb_msg_event_success", () =>
 document.getElementById("root").addEventListener("fb_msg_event_error", () => {
     ReactDOM.render(<Oops />, document.getElementById("root"));
 });
-ReactDOM.render(<Oops />, document.getElementById("root"));
