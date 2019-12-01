@@ -6,7 +6,7 @@ const router = express.Router()
 // @route GET api/underwriting
 // @desc Test Getting Main Category for underwriting
 // @access Private
-router.get('/', auth, async function (req, res, next) {
+router.get('/', async function (req, res, next) {
   try {
     const doc = await getDB().collection('taxonomy_underwriting').distinct("System")
     if(!doc){

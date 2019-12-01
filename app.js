@@ -32,20 +32,13 @@ const app = express()
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
-/* ----------  Static Assets  ---------- */
+// /* ----------  Static Assets  ---------- */
 if(process.env.NODE_ENV === 'production'){
   console.log('RUNNING PRODUCTION BUILD')
   app.use(express.static(path.join(__dirname, 'client/build')))
-  app.get("*", (req, res)=>{
-    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
-  })
 } else{
   console.log('RUNNING DEV BUILD')
   app.use(express.static(path.join(__dirname, 'public')))
-  // app.use(express.static(path.join(__dirname, 'client/build')))
-  // app.get("*", (req, res)=>{
-  //   res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
-  // })
 }
 
 
@@ -76,6 +69,25 @@ app.use('/api/users', userAPI)
 app.use('/api/flows', flowAPI)
 app.use('/api/auth', authAPI)
 
+
+/* ----------  Fallback Routes  ---------- */
+if(process.env.NODE_ENV === 'production'){
+  app.get("*", (req, res)=>{
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+  })
+}
+
+/* ----------  Static Assets  ---------- */
+if(process.env.NODE_ENV === 'production'){
+  console.log('RUNNING PRODUCTION BUILD')
+  app.use(express.static(path.join(__dirname, 'client/build')))
+  app.get("*", (req, res)=>{
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+  })
+} else{
+  console.log('RUNNING DEV BUILD')
+  app.use(express.static(path.join(__dirname, 'public')))
+}
 /* ----------  Errors  ---------- */
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

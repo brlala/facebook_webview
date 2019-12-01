@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="364e187b-fcb0-488d-a1dd-bb396981992d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/actions/underwriting/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/underwriting/category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api/underwriting.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/underwriting.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -409,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575179216739</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="fixing api calls">
+      <created>1575181355508</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1575181355508</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,7 +438,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added placeholders" />
     <MESSAGE value="added redux store" />
     <MESSAGE value="added a demo page" />
     <MESSAGE value="added reducer and dispatch to demo page" />
@@ -454,7 +462,8 @@
     <MESSAGE value="testing conditional rendering" />
     <MESSAGE value="finished loading category, moving to implementing sub category and button click" />
     <MESSAGE value="added facebook auth on underwriting page" />
-    <option name="LAST_COMMIT_MESSAGE" value="added facebook auth on underwriting page" />
+    <MESSAGE value="fixing api calls" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing api calls" />
   </component>
   <component name="WindowStateProjectService">
     <state x="820" y="207" key="#Plugins" timestamp="1574836118128">
@@ -535,10 +544,10 @@
     <state x="683" y="158" key="SettingsEditor/0.23.1680.967@0.23.1680.967" timestamp="1575019288901" />
     <state x="683" y="159" key="SettingsEditor/0.23.1680.972@0.23.1680.972" timestamp="1574866099704" />
     <state x="782" y="162" key="SettingsEditor/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1575002581476" />
-    <state x="1006" y="129" key="Vcs.Push.Dialog.v2" timestamp="1575179222867">
+    <state x="1006" y="129" key="Vcs.Push.Dialog.v2" timestamp="1575181357077">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1006" y="129" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575179222867" />
+    <state x="1006" y="129" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575181357077" />
     <state x="880" y="143" key="Vcs.Push.Dialog.v2/0.23.1680.965@0.23.1680.965" timestamp="1575108985920" />
     <state x="880" y="143" key="Vcs.Push.Dialog.v2/0.23.1680.966@0.23.1680.966" timestamp="1575141454855" />
     <state x="880" y="142" key="Vcs.Push.Dialog.v2/0.23.1680.967@0.23.1680.967" timestamp="1574793067881" />
@@ -550,10 +559,10 @@
     <state x="100" y="105" width="1720" height="831" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575176094992" />
     <state x="0" y="93" width="1680" height="793" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1680.966@0.23.1680.966" timestamp="1574928566585" />
     <state x="100" y="123" width="1720" height="793" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1574929942323" />
-    <state x="953" y="275" width="781" height="526" key="find.popup" timestamp="1575180714704">
+    <state x="953" y="275" width="781" height="526" key="find.popup" timestamp="1575182311515">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="953" y="275" width="781" height="526" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575180714704" />
+    <state x="953" y="275" width="781" height="526" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575182311515" />
     <state x="834" y="278" width="683" height="476" key="find.popup/0.23.1680.965@0.23.1680.965" timestamp="1575107727468" />
     <state x="834" y="278" width="683" height="477" key="find.popup/0.23.1680.966@0.23.1680.966" timestamp="1575139747402" />
     <state x="834" y="278" width="683" height="476" key="find.popup/0.23.1680.967@0.23.1680.967" timestamp="1575107426936" />
