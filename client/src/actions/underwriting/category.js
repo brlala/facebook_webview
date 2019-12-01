@@ -19,9 +19,10 @@ export const getCategories = () => async dispatch => {
       payload: res.data,
     })
   } catch (e) {
+    console.log(e)
     dispatch({
       type: CATEGORY_ERROR,
-      payload: { msg: e.response.statusText, status: e.response.status },
+      payload: { msg: e.statusText, status: e.status },
     })
   }
 }
