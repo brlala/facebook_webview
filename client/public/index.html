@@ -17,12 +17,12 @@
 <body>
 <!--  Messenger Script-->
 <script>
-    var event = new Event("fb_msg_event");
-
-    setTimeout(() => {
-        window.test_param = "This app will load after 1 second.";
-        document.getElementById("root").dispatchEvent(event);
-    }, 1000);
+    // var event = new Event("fb_msg_event");
+    //
+    // setTimeout(() => {
+    //     window.test_param = "This app will load after 1 second.";
+    //     document.getElementById("root").dispatchEvent(event);
+    // }, 1000);
 
     (function (doc, script, domId) {
         var js, fjs = doc.getElementsByTagName(script)[0]
@@ -59,6 +59,8 @@
                             document.body.innerHTML = 'Error closing window. Please close the window manually.'
                         })
                 }
+                var event = new Event("fb_msg_event");
+                document.getElementById("root").dispatchEvent(event)
             },
             function error(err) {
                 MessengerExtensions.requestCloseBrowser(
