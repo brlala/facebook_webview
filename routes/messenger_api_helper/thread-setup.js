@@ -1,7 +1,7 @@
 // ===== MESSENGER =============================================================
 let api = require('./api')
 
-/*
+/**
  * SETUP
  *
  * Methods that should only be called at first run

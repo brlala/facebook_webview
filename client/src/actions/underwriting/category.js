@@ -38,7 +38,7 @@ export const getSubcategories = subcategory => async dispatch => {
   } catch (e) {
     dispatch({
       type: SUBCATEGORY_ERROR,
-      payload: { msg: e.response.statusText, status: e.response.status },
+      payload: { msg: e.statusText, status: e.status },
     })
   }
 }
@@ -66,19 +66,14 @@ export const postSubcategory = (userID, subcategory) => async dispatch => {
     }
 
     // Posting to Gateway
-    res = await axios.post(`/gateway/facebook`, body)
-    // res = await axios.post(`${gatewayURI}facebook/webhook/`, body, config)
-    // dispatch({
-    //   type: SEND_SELECTION_SUCCESSFUL,
-    // })
-    //
-    // dispatch({
-    //   type: CLOSE_WINDOW,
-    // })
+    await axios.post(`/gateway/facebook`, body)
+    dispatch({
+      type: SEND_SELECTION_SUCCESSFUL,
+    })
   } catch (e) {
-    // dispatch({
-    //   type: SEND_SELECTION_FAIL,
-    //   payload: { msg: e.response.statusText, status: e.response.status },
-    // })
+    dispatch({
+      type: SEND_SELECTION_FAIL,
+      payload: { msg: e.statusText, status: e.status },
+    })
   }
 }

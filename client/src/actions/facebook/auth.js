@@ -36,5 +36,4 @@ export const facebookLogin = fbPayload => async dispatch => {
             type: LOGIN_FAIL,
         })
     }
-    ////////////////////////////////
 }

@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="364e187b-fcb0-488d-a1dd-bb396981992d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/actions/facebook/webview-controls.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/facebook/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/facebook/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/underwriting/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/underwriting/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/underwriting/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/underwriting/Category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/reducers/facebook.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/facebook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/messenger_api_helper/thread-setup.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/messenger_api_helper/thread-setup.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +43,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="13.2.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/routes/messenger_api_helper" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -54,19 +60,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client" />
-      <recent name="$PROJECT_DIR$/routes" />
-      <recent name="$PROJECT_DIR$/client/src/reducers" />
-      <recent name="$PROJECT_DIR$/client/src/components/layout" />
-      <recent name="$PROJECT_DIR$/client/src/actions/underwriting" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\webview-template\routes\messenger_api_helper" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/routes/api" />
       <recent name="$PROJECT_DIR$/routes" />
       <recent name="$PROJECT_DIR$/client/src/components/common" />
-      <recent name="$PROJECT_DIR$/client/src/components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\webview-template\client\src\actions\facebook" />
+      <recent name="C:\Users\User\WebstormProjects\webview-template\client\src\components\facebook" />
+      <recent name="$PROJECT_DIR$/client" />
+      <recent name="$PROJECT_DIR$/routes" />
+      <recent name="$PROJECT_DIR$/client/src/reducers" />
     </key>
   </component>
   <component name="RunManager" selected="npm.postbuild">
@@ -119,13 +125,6 @@
       <workItem from="1574905988829" duration="22807000" />
       <workItem from="1574935795477" duration="26680000" />
       <workItem from="1575112364654" duration="11312000" />
-    </task>
-    <task id="LOCAL-00002" summary="Initial commit">
-      <created>1574738639414</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1574738639414</updated>
     </task>
     <task id="LOCAL-00003" summary="connected database">
       <created>1574739657139</created>
@@ -463,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575193848698</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="adding event listener">
+      <created>1575194220063</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1575194220063</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -589,10 +595,10 @@
     <state x="683" y="158" key="SettingsEditor/0.23.1680.967@0.23.1680.967" timestamp="1575019288901" />
     <state x="683" y="159" key="SettingsEditor/0.23.1680.972@0.23.1680.972" timestamp="1574866099704" />
     <state x="782" y="162" key="SettingsEditor/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1575002581476" />
-    <state x="1006" y="129" key="Vcs.Push.Dialog.v2" timestamp="1575193851101">
+    <state x="1006" y="129" key="Vcs.Push.Dialog.v2" timestamp="1575194222428">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1006" y="129" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575193851101" />
+    <state x="1006" y="129" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575194222428" />
     <state x="880" y="143" key="Vcs.Push.Dialog.v2/0.23.1680.965@0.23.1680.965" timestamp="1575108985920" />
     <state x="880" y="143" key="Vcs.Push.Dialog.v2/0.23.1680.966@0.23.1680.966" timestamp="1575141454855" />
     <state x="880" y="142" key="Vcs.Push.Dialog.v2/0.23.1680.967@0.23.1680.967" timestamp="1574793067881" />
@@ -604,10 +610,10 @@
     <state x="100" y="105" width="1720" height="831" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575176094992" />
     <state x="0" y="93" width="1680" height="793" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1680.966@0.23.1680.966" timestamp="1574928566585" />
     <state x="100" y="123" width="1720" height="793" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1920.993/-1680.23.1680.1027@0.23.1920.993" timestamp="1574929942323" />
-    <state x="953" y="275" width="781" height="526" key="find.popup" timestamp="1575192690237">
+    <state x="953" y="275" width="781" height="526" key="find.popup" timestamp="1575195210856">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="953" y="275" width="781" height="526" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575192690237" />
+    <state x="953" y="275" width="781" height="526" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1575195210856" />
     <state x="834" y="278" width="683" height="476" key="find.popup/0.23.1680.965@0.23.1680.965" timestamp="1575107727468" />
     <state x="834" y="278" width="683" height="477" key="find.popup/0.23.1680.966@0.23.1680.966" timestamp="1575139747402" />
     <state x="834" y="278" width="683" height="476" key="find.popup/0.23.1680.967@0.23.1680.967" timestamp="1575107426936" />
