@@ -7,7 +7,6 @@ import {
 import {setAlert} from "../alert";
 import {loadUser} from "../auth";
 
-// Get categories list
 export const facebookLogin = fbPayload => async dispatch => {
 
     const config = {

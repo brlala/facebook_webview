@@ -15,6 +15,7 @@ import { Provider } from 'react-redux'
 import store from './store'
 import setAuthToken from './utils/setAuthToken'
 import {facebookLogin} from "./actions/facebook/auth";
+import Oops from './components/layout/Oops'
 
 if (localStorage.token) {
   setAuthToken(localStorage.token)
@@ -37,6 +38,7 @@ const App = () => {
             <Switch>
               <Route exact path="/register" component={Register}/>
               <Route exact path="/login" component={Login}/>
+              <Route exact path="/error" component={Oops}/>
               <PrivateRoute exact path="/underwriting" component={Underwriting}/>
             </Switch>
           </section>
