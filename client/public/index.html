@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1"/>-->
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1"/>-->
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"/>
     <meta name="theme-color" content="#000000"/>
     <meta name="description" content="Web site created using create-react-app"/>
@@ -18,55 +18,50 @@
 <body>
 <!--  Messenger Script-->
 <script>
-    // var event = new Event("fb_msg_event");
-    //
-    // setTimeout(() => {
-    //     window.test_param = "This app will load after 1 second.";
-    //     document.getElementById("root").dispatchEvent(event);
-    // }, 1000);
+  (function (doc, script, domId) {
+    var js, fjs = doc.getElementsByTagName(script)[0]
+    if (doc.getElementById(domId)) {
+      return
+    }
+    js = doc.createElement(script)
+    js.id = domId
+    js.src = '//connect.facebook.com/en_US/messenger.Extensions.js'
+    fjs.parentNode.insertBefore(js, fjs)
+  }(document, 'script', 'Messenger'))
 
-    (function (doc, script, domId) {
-        var js, fjs = doc.getElementsByTagName(script)[0]
-        if (doc.getElementById(domId)) {
-            return
-        }
-        js = doc.createElement(script)
-        js.id = domId
-        js.src = '//connect.facebook.com/en_US/messenger.Extensions.js'
-        fjs.parentNode.insertBefore(js, fjs)
-    }(document, 'script', 'Messenger'))
+  window.extAsyncInit = function () {
+    MessengerExtensions.getContext('%REACT_APP_APP_ID%',
+      function success (thread_context) {
+        const signed_request = thread_context.signed_request
+        const psid = thread_context.psid // THIS PSID IS NOW MISSING!
+        window.fbPayload = thread_context
+        console.log(thread_context)
 
-    window.extAsyncInit = function () {
-        MessengerExtensions.getContext('%REACT_APP_APP_ID%',
-            function success(thread_context) {
-                const signed_request = thread_context.signed_request
-                const psid = thread_context.psid // THIS PSID IS NOW MISSING!
-                window.fbPayload = thread_context
-
-                console.log(
-                    '***** Messenger Extensions Loaded! \n',
-                    'Context: \n',
-                    thread_context,
-                    '\n App ID: ',
-                    '%REACT_APP_APP_ID%',
-                    '\n ******',
-                )
-
-                if (!signed_request || !psid) {
-
-                    var event = new Event("fb_msg_event_fail");
-                    document.getElementById("root").dispatchEvent(event)
-                }
-                event = new Event("fb_msg_event_success");
-                document.getElementById("root").dispatchEvent(event)
-            },
-            function error(err) {
-                var event = new Event("fb_msg_event_fail");
-                document.getElementById("root").dispatchEvent(event)
-
-            },
+        console.log(
+          '***** Messenger Extensions Loaded! \n',
+          'Context: \n',
+          thread_context,
+          '\n App ID: ',
+          '%REACT_APP_APP_ID%',
+          '\n ******',
         )
-    };
+
+        if (!signed_request || !psid) {
+
+          var event = new Event('fb_msg_event_error')
+          document.getElementById('root').dispatchEvent(event)
+        }
+        event = new Event('fb_msg_event_success')
+        document.getElementById('root').dispatchEvent(event)
+      },
+      function error (err) {
+
+        var event = new Event('fb_msg_event_error')
+        document.getElementById('root').dispatchEvent(event)
+
+      },
+    )
+  }
 
 
 </script>
