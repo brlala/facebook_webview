@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8"/>
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1"/>-->
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"/>
     <meta name="theme-color" content="#000000"/>
     <meta name="description" content="Web site created using create-react-app"/>
     <link rel="apple-touch-icon" href="logo192.png"/>
@@ -12,13 +13,16 @@
 
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
     <title>Welcome to your ReactApp</title>
+
 </head>
 <body>
 <!--  Messenger Script-->
 <script>
   (function (doc, script, domId) {
     var js, fjs = doc.getElementsByTagName(script)[0]
-    if (doc.getElementById(domId)) { return }
+    if (doc.getElementById(domId)) {
+      return
+    }
     js = doc.createElement(script)
     js.id = domId
     js.src = '//connect.facebook.com/en_US/messenger.Extensions.js'
@@ -26,11 +30,11 @@
   }(document, 'script', 'Messenger'))
 
   window.extAsyncInit = function () {
-    window.loading = true
     MessengerExtensions.getContext('%REACT_APP_APP_ID%',
       function success (thread_context) {
         const signed_request = thread_context.signed_request
-        const psid = window.psid = thread_context.psid // THIS PSID IS NOW MISSING!
+        const psid = thread_context.psid // THIS PSID IS NOW MISSING!
+        window.fbPayload = thread_context
 
         console.log(
           '***** Messenger Extensions Loaded! \n',
@@ -42,23 +46,25 @@
         )
 
         if (!signed_request || !psid) {
-          MessengerExtensions.requestCloseBrowser(
-            () => {},
-            () => {document.body.innerHTML = 'Error closing window. Please close the window manually.'})
-        }
 
-        window.loading = false
+          var event = new Event('fb_msg_event_error')
+          document.getElementById('root').dispatchEvent(event)
+        }
+        event = new Event('fb_msg_event_success')
+        document.getElementById('root').dispatchEvent(event)
       },
       function error (err) {
-        MessengerExtensions.requestCloseBrowser(
-          () => {},
-          () => {document.body.innerHTML = 'Error closing window. Please close the window manually.'})
+
+        var event = new Event('fb_msg_event_error')
+        document.getElementById('root').dispatchEvent(event)
+
       },
     )
-  };
+  }
+
 
 </script>
 <noscript>You need to enable JavaScript to run this app.</noscript>
-
+<div id="root"></div>
 </body>
 </html>

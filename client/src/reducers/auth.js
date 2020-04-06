@@ -1,6 +1,6 @@
 import {
   REGISTER_SUCCESS,
-  REGISTER_FAIL, USER_LOADED, AUTH_ERROR, LOGIN_SUCCESS, LOGIN_FAIL, LOGOUT
+  REGISTER_FAIL, USER_LOADED, AUTH_ERROR, LOGIN_SUCCESS, LOGIN_FAIL, LOGOUT, FB_PSID_LOGIN_FAIL, FB_PSID_LOGIN_SUCCESS
 } from '../actions/types'
 
 const initialState = {
@@ -23,6 +23,7 @@ export default function (state = initialState, action) {
       }
     case REGISTER_SUCCESS:
     case LOGIN_SUCCESS:
+    case FB_PSID_LOGIN_SUCCESS:
       localStorage.setItem('token', payload.token)
       return{
         ...state,
@@ -34,6 +35,7 @@ export default function (state = initialState, action) {
     case AUTH_ERROR:
     case LOGIN_FAIL:
     case LOGOUT:
+    case FB_PSID_LOGIN_FAIL:
       localStorage.removeItem('token')
       return {
         ...state,

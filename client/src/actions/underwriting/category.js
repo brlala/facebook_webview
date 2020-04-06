@@ -7,7 +7,6 @@ import {
   SUBCATEGORY_ERROR,
   SEND_SELECTION_SUCCESSFUL,
   SEND_SELECTION_FAIL,
-  CLOSE_WINDOW,
 } from '../types'
 
 // Get categories list
@@ -19,9 +18,10 @@ export const getCategories = () => async dispatch => {
       payload: res.data,
     })
   } catch (e) {
+    console.log(e)
     dispatch({
       type: CATEGORY_ERROR,
-      payload: { msg: e.response.statusText, status: e.response.status },
+      payload: { msg: e.statusText, status: e.status },
     })
   }
 }
@@ -37,7 +37,7 @@ export const getSubcategories = subcategory => async dispatch => {
   } catch (e) {
     dispatch({
       type: SUBCATEGORY_ERROR,
-      payload: { msg: e.response.statusText, status: e.response.status },
+      payload: { msg: e.statusText, status: e.status },
     })
   }
 }
@@ -48,7 +48,7 @@ export const postSubcategory = (userID, subcategory) => async dispatch => {
 
   try {
     // Getting required information
-    let res = await axios.get(`api/flows/${flowName}`)
+    let res = await axios.get(`/api/flows/${flowName}`)
     const flowID = res.data._id
 
     // Initializing Content
@@ -65,19 +65,14 @@ export const postSubcategory = (userID, subcategory) => async dispatch => {
     }
 
     // Posting to Gateway
-    res = await axios.post(`/gateway/facebook`, body)
-    // res = await axios.post(`${gatewayURI}facebook/webhook/`, body, config)
-    // dispatch({
-    //   type: SEND_SELECTION_SUCCESSFUL,
-    // })
-    //
-    // dispatch({
-    //   type: CLOSE_WINDOW,
-    // })
+    await axios.post(`/gateway/facebook`, body)
+    dispatch({
+      type: SEND_SELECTION_SUCCESSFUL,
+    })
   } catch (e) {
-    // dispatch({
-    //   type: SEND_SELECTION_FAIL,
-    //   payload: { msg: e.response.statusText, status: e.response.status },
-    // })
+    dispatch({
+      type: SEND_SELECTION_FAIL,
+      payload: { msg: e.statusText, status: e.status },
+    })
   }
 }

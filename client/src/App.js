@@ -8,14 +8,14 @@ import Login from './components/auth/Login'
 import Alert from './components/layout/Alert'
 import Underwriting from './components/underwriting/Underwriting'
 import PrivateRoute from './components/routing/PrivateRoute'
-import Oops from './components/layout/Oops';
-import { connect } from 'react-redux'
 
 // Redux
 import { loadUser } from './actions/auth'
 import { Provider } from 'react-redux'
 import store from './store'
 import setAuthToken from './utils/setAuthToken'
+import {facebookLogin} from "./actions/facebook/auth";
+import Oops from './components/layout/Oops'
 
 if (localStorage.token) {
   setAuthToken(localStorage.token)
@@ -23,16 +23,9 @@ if (localStorage.token) {
 
 const App = () => {
   useEffect(() => {
+    store.dispatch(facebookLogin(window.fbPayload))
     store.dispatch(loadUser());
   }, [])
-
-  console.log('loading 3 '+window.loading)
-  console.log(window.psid)
-  if (!window.psid){
-    return(
-      <Oops/>
-    )
-  }
 
   return (
     <Provider store={store}>
@@ -45,6 +38,7 @@ const App = () => {
             <Switch>
               <Route exact path="/register" component={Register}/>
               <Route exact path="/login" component={Login}/>
+              <Route exact path="/error" component={Oops}/>
               <PrivateRoute exact path="/underwriting" component={Underwriting}/>
             </Switch>
           </section>
